@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Тестування знань</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <h1>Тестування знань</h1>
+    <form action="{{ url_for('test') }}" method="POST">
+      {% for question in questions %}
+      <div class="question">
+        <p>{{ question.text }}</p>
+        {% for option in question.options %}
+        <div class="option">
+          <input type="radio" id="{{ option }}" name="{{ question.id }}" value="{{ option }}">
+          <label for="{{ option }}">{{ option }}</label>
+        </div>
+        {% endfor %}
+      </div>
+      {% endfor %}
+      <button type="submit">Підрахувати</button>
+    </form>
+    {% if score is not none %}
+    <div class="score">
+      <center><h2>Ваш результат: {{ score }}/{{ num_questions }}</h2></center>
+    </div>
+    {% endif %}
+  </body>
+</html>

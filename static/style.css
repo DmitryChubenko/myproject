@@ -1,0 +1,98 @@
+/* Заголовок та фон нашого тесту */
+h1 {
+	font-size: 36px;
+	margin: 30px 0 20px 0;
+	text-align: center;
+  }
+  
+  body {
+	background-color: #f5f5f5;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+  }
+  
+  /* Форма тесту */
+  form {
+	margin-top: 20px;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #ffffff;
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  }
+  
+  /* Кнопка відправки форми */
+  button[type=submit] {
+	background-color: #2196F3;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-top: 20px;
+	font-size: 16px;
+  }
+  
+  /* Опис кількості запитань та рахунок користувача */
+  .result {
+	margin-top: 20px;
+	font-size: 24px;
+	font-weight: bold;
+  }
+  
+  /* Заголовок запитання */
+  .question {
+	font-size: 20px;
+	margin-bottom: 10px;
+  }
+  
+  /* Список відповідей */
+  .options {
+	margin-top: 10px;
+  }
+  
+  /* Окрема відповідь у списку */
+  .option {
+	margin-bottom: 10px;
+  }
+  
+  /* Зелений колір для правильної відповіді */
+  .correct {
+	color: green;
+	font-weight: bold;
+  }
+  
+  /* Червоний колір для неправильної відповіді */
+  .incorrect {
+	color: red;
+	font-weight: bold;
+  }
+
+  /* Стилі для результату */
+.result {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #f7f7f7;
+	text-align: center;
+  }
+  
+  .result h2 {
+	font-size: 36px;
+	margin-top: 0;
+	margin-bottom: 10px;
+  }
+  
+  .result p {
+	font-size: 24px;
+	margin-top: 0;
+  }
+  
+  .result span {
+	font-size: 28px;
+	font-weight: bold;
+	color: #008CBA;
+  }
